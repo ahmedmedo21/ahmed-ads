@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="أحمد · إعلانات الفساتين">
+<meta property="og:description" content="عارضة تلبس فستانك نفسه، وتتكلم خليجي. أول إعلان مجاناً.">
+<meta property="og:image" content="ad-transition.jpg">
+<title>أحمد · إعلانات الفساتين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #1a1320;
+    --surface: #241b2b;
+    --line: #3a2e42;
+    --ink: #f5efe6;
+    --muted: #b8adc0;
+    --butter: #ecdb8f;
+    --lace: #f7f0dc;
+    --display: "Reem Kufi", "Segoe UI", Tahoma, sans-serif;
+    --body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  }
+  html { direction: rtl; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.75;
+    padding-inline: 18px;
+    padding-block: 40px 56px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 56px; }
+
+  header { display: grid; gap: 14px; max-width: 40rem; }
+  .eyebrow {
+    color: var(--butter);
+    font-size: 13px;
+    letter-spacing: .04em;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(30px, 6vw, 50px);
+    line-height: 1.25;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--butter); }
+  .lede { color: var(--muted); margin: 0; font-size: 17px; max-width: 34rem; }
+
+  .reel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  figure { margin: 0; display: grid; gap: 14px; }
+  .frame {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    max-width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 0 0 1px var(--line), 0 30px 60px -30px rgba(236, 219, 143, .25);
+  }
+  video { width: 100%; height: 100%; display: block; object-fit: cover; }
+  figcaption { display: grid; gap: 4px; }
+  .tag { font-family: var(--display); font-size: 20px; font-weight: 500; }
+  .line { color: var(--muted); font-size: 15px; }
+  .line q { color: var(--lace); quotes: "«" "»"; }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    border-top: 1px solid var(--line);
+    padding-top: 40px;
+  }
+  h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  ul, ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+  li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: baseline; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--butter); transform: translateY(-2px); }
+  ol { counter-reset: step; }
+  ol li { counter-increment: step; }
+  ol li::before {
+    content: counter(step, arabic-indic);
+    font-family: var(--display);
+    color: var(--ground);
+    background: var(--butter);
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 15px;
+  }
+  li b { font-weight: 600; }
+  li span.sub { display: block; color: var(--muted); font-size: 14px; }
+
+  .offer {
+    border: 1px solid var(--butter);
+    border-radius: 18px;
+    padding-inline: 24px;
+    padding-block: 22px;
+    display: grid;
+    gap: 6px;
+  }
+  .offer strong { font-family: var(--display); font-size: 22px; color: var(--butter); font-weight: 500; }
+  .offer p { margin: 0; color: var(--muted); }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">أحمد · إعلانات فيديو UGC بالذكاء الاصطناعي</div>
+    <h1>عارضة تلبس <em>فستانك نفسه</em>، وتتكلم خليجي</h1>
+    <p class="lede">إعلانات 15 ثانية جاهزة لتيك توك وسناب وريلز. بدون تصوير وبدون عارضة، والفستان يظهر كما هو في صورك: نفس الدانتيل والقصّة واللون.</p>
+  </header>
+
+  <section class="reel" aria-label="نماذج من الإعلانات">
+    <figure>
+      <div class="frame">
+        <video id="ad-transition" src="ad-transition.mp4" poster="ad-transition.jpg" controls playsinline preload="metadata"></video>
+      </div>
+      <figcaption>
+        <span class="tag">قبل وبعد</span>
+        <span class="line"><q>الزواج الليلة وما عندي شي ألبسه!</q> ثم الفستان يغطي الكاميرا، وترجع لابسته.</span>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame">
+        <video id="ad-wedding" src="ad-wedding.mp4" poster="ad-wedding.jpg" controls playsinline preload="metadata"></video>
+      </div>
+      <figcaption>
+        <span class="tag">عندك زواج قريب؟</span>
+        <span class="line">تلف ويبان الظهر والرباط، ثم تمشي للكاميرا: <q>اطلبيه الحين</q></span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="grid2">
+    <div>
+      <h2>وش في كل إعلان</h2>
+      <ul>
+        <li><span class="dot"></span><span><b>بداية تشد في أول ثانيتين</b><span class="sub">جملة بصوت خليجي طبيعي، أو قبل وبعد</span></span></li>
+        <li><span class="dot"></span><span><b>فستانك نفسه، مو فستان يشبهه</b><span class="sub">من صورك الأمامية والخلفية</span></span></li>
+        <li><span class="dot"></span><span><b>عارضة ثابتة بنفس الوجه</b><span class="sub">في كل إعلاناتكم، وستايلها على ذوق المحل</span></span></li>
+        <li><span class="dot"></span><span><b>1080×1920 عمودي</b><span class="sub">جاهز للإعلانات المدفوعة، مع كتابة عربية ودعوة للطلب</span></span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>كيف نشتغل</h2>
+      <ol>
+        <li><span><b>ترسلون صورة أمامية وخلفية للفستان</b><span class="sub">من الموقع أو من جوالكم</span></span></li>
+        <li><span><b>الإعلان يوصلكم خلال 48 ساعة</b></span></li>
+        <li><span><b>تعديل مجاني</b><span class="sub">على الكتابة أو الصوت أو السعر المعروض</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="offer">
+    <strong>أول إعلان مجاناً</strong>
+    <p>أرسلوا صورة أمامية وخلفية لأي فستان تختارونه في نفس المحادثة.</p>
+  </section>
+
+  <footer>الإعلانات مصنوعة بالذكاء الاصطناعي. العارضة شخصية خيالية، والفستان من صور المتجر.</footer>
+</div>
+</body>
+</html>
