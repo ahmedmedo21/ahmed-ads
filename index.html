@@ -78,6 +78,8 @@
   .line { color: var(--muted); font-size: 15px; }
   .line q { color: var(--lace); quotes: "«" "»"; }
 
+  .samples { display: grid; gap: 20px; border-top: 1px solid var(--line); padding-top: 40px; }
+  .samples h2 { margin: 0; }
   .grid2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -150,6 +152,39 @@
         <span class="line">تلف ويبان الظهر والرباط، ثم تمشي للكاميرا: <q>اطلبيه الحين</q></span>
       </figcaption>
     </figure>
+    <figure>
+      <div class="frame">
+        <video id="ad-shampoo" src="ad-shampoo.mp4" poster="ad-shampoo.jpg" controls playsinline preload="metadata"></video>
+      </div>
+      <figcaption>
+        <span class="tag">مو بس فساتين: شامبو</span>
+        <span class="line">مشكلة تساقط الشعر في أول ثانيتين، ثم المنتج في يدها والعلامة واضحة.</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="samples" aria-label="عينات لمتاجر">
+    <h2>عينات سويناها لمتاجر فساتين</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="sample-hulm" src="sample-hulm.mp4" poster="sample-hulm.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان «حلم»</span>
+          <span class="line">6 ثواني من صور المتجر: <q>لموسم الأعراس</q> ولفة كاملة.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="sample-qamar" src="sample-qamar.mp4" poster="sample-qamar.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">الفستان الوردي بخيوط الكريستال</span>
+          <span class="line">6 ثواني من صور المتجر: لفة كاملة، ويبان الخرز والظهر.</span>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="grid2">
@@ -177,7 +212,7 @@
     <p>أرسلوا صورة أمامية وخلفية لأي فستان تختارونه في نفس المحادثة.</p>
   </section>
 
-  <footer>الإعلانات مصنوعة بالذكاء الاصطناعي. العارضة شخصية خيالية، والفستان من صور المتجر.</footer>
+  <footer>الإعلانات مصنوعة بالذكاء الاصطناعي. العارضة شخصية خيالية، والمنتج من صور المتجر.</footer>
 </div>
 </body>
 </html>
