@@ -122,6 +122,22 @@
   .offer strong { font-family: var(--display); font-size: 22px; color: var(--butter); font-weight: 500; }
   .offer p { margin: 0; color: var(--muted); }
   footer { color: var(--muted); font-size: 13px; }
+  .jump { display: flex; flex-wrap: wrap; gap: 10px; }
+  .jump a {
+    color: var(--lace); text-decoration: none; font-size: 14px;
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px;
+  }
+  .jump a:hover, .jump a:focus-visible { border-color: var(--butter); color: var(--butter); }
+  .badge {
+    display: inline-block; vertical-align: middle; margin-inline-start: 8px;
+    background: var(--butter); color: var(--ground);
+    font-family: var(--body); font-size: 12px; font-weight: 600;
+    border-radius: 999px; padding: 0 9px; line-height: 20px;
+  }
+  .group { display: grid; gap: 20px; }
+  .group h2, .samples h2 { margin: 0; }
+  html { scroll-behavior: smooth; }
+
 </style>
 </head>
 <body>
@@ -130,49 +146,116 @@
   <header>
     <div class="eyebrow">أحمد · إعلانات فيديو UGC بالذكاء الاصطناعي</div>
     <h1>عارضة تلبس <em>فستانك نفسه</em>، وتتكلم خليجي</h1>
-    <p class="lede">إعلانات 15 ثانية جاهزة لتيك توك وسناب وريلز. بدون تصوير وبدون عارضة، والفستان يظهر كما هو في صورك: نفس الدانتيل والقصّة واللون.</p>
+    <p class="lede">إعلانات من 6 إلى 15 ثانية جاهزة لتيك توك وسناب وريلز. بدون تصوير وبدون عارضة، والفستان يظهر كما هو في صورك: نفس الدانتيل والقصّة واللون.</p>
   </header>
 
-  <section class="reel" aria-label="نماذج من الإعلانات">
-    <figure>
-      <div class="frame">
-        <video id="ad-lavender" src="ad-lavender.mp4" poster="ad-lavender.jpg" controls playsinline preload="metadata"></video>
-      </div>
-      <figcaption>
-        <span class="tag">عندك زواج قريب وتبين شي مختلف؟</span>
-        <span class="line">في ممر الفندق تورّي التفاصيل من قدام ومن ورا، ثم: <q>تخيلي تدخلين الزواج فيه، كل العيون عليك</q></span>
-      </figcaption>
-    </figure>
-    <figure>
-      <div class="frame">
-        <video id="ad-transition" src="ad-transition.mp4" poster="ad-transition.jpg" controls playsinline preload="metadata"></video>
-      </div>
-      <figcaption>
-        <span class="tag">قبل وبعد</span>
-        <span class="line"><q>الزواج الليلة وما عندي شي ألبسه!</q> ثم الفستان يغطي الكاميرا، وترجع لابسته.</span>
-      </figcaption>
-    </figure>
-    <figure>
-      <div class="frame">
-        <video id="ad-wedding" src="ad-wedding.mp4" poster="ad-wedding.jpg" controls playsinline preload="metadata"></video>
-      </div>
-      <figcaption>
-        <span class="tag">عندك زواج قريب؟</span>
-        <span class="line">تلف ويبان الظهر والرباط، ثم تمشي للكاميرا: <q>اطلبيه الحين</q></span>
-      </figcaption>
-    </figure>
-    <figure>
-      <div class="frame">
-        <video id="ad-shampoo" src="ad-shampoo.mp4" poster="ad-shampoo.jpg" controls playsinline preload="metadata"></video>
-      </div>
-      <figcaption>
-        <span class="tag">مو بس فساتين: شامبو</span>
-        <span class="line">مشكلة تساقط الشعر في أول ثانيتين، ثم المنتج في يدها والعلامة واضحة.</span>
-      </figcaption>
-    </figure>
+  <nav class="jump" aria-label="أقسام الصفحة">
+    <a href="#new">أحدث الأعمال</a>
+    <a href="#dresses">إعلانات الفساتين</a>
+    <a href="#other">منتجات أخرى</a>
+    <a href="#store-samples">عينات المتاجر</a>
+  </nav>
+
+  <section class="group" id="new" aria-label="أحدث الأعمال">
+    <h2>أحدث الأعمال</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="ad-plum" src="ad-plum.mp4" poster="ad-plum.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان البلوم بالتطريز والذيل الطويل <span class="badge">جديد</span></span>
+          <span class="line">على رصيف بحري تمشي للكاميرا، وتلف ويبان الظهر والذيل، ثم: <q>يا بنات شوفوا هالفستان</q> و<q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-maternity" src="ad-maternity.mp4" poster="ad-maternity.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان للحوامل بكيب الحلقات اللامعة <span class="badge">جديد</span></span>
+          <span class="line">في ممر الفندق تلف ويبان الظهر وحركة الكيب، ثم: <q>عندك زواج قريب؟</q> و<q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-sequin" src="ad-sequin.mp4" poster="ad-sequin.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الترتر البني بإبزيم ذهبي <span class="badge">جديد</span></span>
+          <span class="line">في جناح فندق تمشي وتلف، ويبان الترتر من الياقة إلى الحافة ومن الظهر.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-red" src="ad-red.mp4" poster="ad-red.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الورد ثلاثي الأبعاد بالشراشيب <span class="badge">جديد</span></span>
+          <span class="line">وقفة ولفة وبصّة من فوق الكتف، وتبان الورود والخرز والرباط من ورا.</span>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 
-  <section class="samples" aria-label="عينات لمتاجر">
+  <section class="samples" id="dresses" aria-label="إعلانات الفساتين">
+    <h2>إعلانات الفساتين</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="ad-reem" src="ad-reem.mp4" poster="ad-reem.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">وش ألبس لزواج أختي؟</span>
+          <span class="line">على رصيف القناة تمشي للكاميرا، وتلف ويطير الشال، ثم: <q>الطلب واتساب، والرابط في البايو</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-lavender" src="ad-lavender.mp4" poster="ad-lavender.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">عندك زواج قريب وتبين شي مختلف؟</span>
+          <span class="line">في ممر الفندق تورّي التفاصيل من قدام ومن ورا، ثم: <q>تخيلي تدخلين الزواج فيه، كل العيون عليك</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-transition" src="ad-transition.mp4" poster="ad-transition.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">قبل وبعد</span>
+          <span class="line"><q>الزواج الليلة وما عندي شي ألبسه!</q> ثم الفستان يغطي الكاميرا، وترجع لابسته.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-wedding" src="ad-wedding.mp4" poster="ad-wedding.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">عندك زواج قريب؟</span>
+          <span class="line">تلف ويبان الظهر والرباط، ثم تمشي للكاميرا: <q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="samples" id="other" aria-label="وكمان منتجات غير الفساتين">
+    <h2>وكمان منتجات غير الفساتين</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="ad-shampoo" src="ad-shampoo.mp4" poster="ad-shampoo.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">مو بس فساتين: شامبو</span>
+          <span class="line">مشكلة تساقط الشعر في أول ثانيتين، ثم المنتج في يدها والعلامة واضحة.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="samples" id="store-samples" aria-label="عينات سويناها لمتاجر فساتين">
     <h2>عينات سويناها لمتاجر فساتين</h2>
     <div class="reel">
       <figure>
