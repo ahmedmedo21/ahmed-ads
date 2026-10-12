@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="sahra.studio · إنتاج إعلانات الأزياء للوكالات">
+<meta property="og:description" content="فريق إنتاج من خلفكم: إعلانات UGC لعملائكم من متاجر الأزياء، باسمكم، خلال 24 ساعة.">
+<meta property="og:image" content="https://ahmedmedo21.github.io/ahmed-ads/ad-lavender.jpg">
+<meta property="og:url" content="https://ahmedmedo21.github.io/ahmed-ads/agencies.html">
+<meta property="og:type" content="website">
+<title>sahra.studio · للوكالات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #1a1320;
+    --surface: #241b2b;
+    --line: #3a2e42;
+    --ink: #f5efe6;
+    --muted: #b8adc0;
+    --butter: #ecdb8f;
+    --lace: #f7f0dc;
+    --display: "Reem Kufi", "Segoe UI", Tahoma, sans-serif;
+    --body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  }
+  html { direction: rtl; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.75;
+    padding-inline: 18px;
+    padding-block: 40px 56px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 56px; }
+
+  header { display: grid; gap: 14px; max-width: 40rem; }
+  .eyebrow {
+    color: var(--butter);
+    font-size: 13px;
+    letter-spacing: .04em;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(30px, 6vw, 50px);
+    line-height: 1.25;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--butter); }
+  .lede { color: var(--muted); margin: 0; font-size: 17px; max-width: 34rem; }
+
+  .reel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  figure { margin: 0; display: grid; gap: 14px; }
+  .frame {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    max-width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 0 0 1px var(--line), 0 30px 60px -30px rgba(236, 219, 143, .25);
+  }
+  video { width: 100%; height: 100%; display: block; object-fit: cover; }
+  figcaption { display: grid; gap: 4px; }
+  .tag { font-family: var(--display); font-size: 20px; font-weight: 500; }
+  .line { color: var(--muted); font-size: 15px; }
+  .line q { color: var(--lace); quotes: "«" "»"; }
+
+  .samples { display: grid; gap: 20px; border-top: 1px solid var(--line); padding-top: 40px; }
+  .samples h2 { margin: 0; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    border-top: 1px solid var(--line);
+    padding-top: 40px;
+  }
+  h2 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  ul, ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+  li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: baseline; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--butter); transform: translateY(-2px); }
+  ol { counter-reset: step; }
+  ol li { counter-increment: step; }
+  ol li::before {
+    content: counter(step, arabic-indic);
+    font-family: var(--display);
+    color: var(--ground);
+    background: var(--butter);
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 15px;
+  }
+  li b { font-weight: 600; }
+  li span.sub { display: block; color: var(--muted); font-size: 14px; }
+
+  .offer {
+    border: 1px solid var(--butter);
+    border-radius: 18px;
+    padding-inline: 24px;
+    padding-block: 22px;
+    display: grid;
+    gap: 6px;
+  }
+  .offer strong { font-family: var(--display); font-size: 22px; color: var(--butter); font-weight: 500; }
+  .offer p { margin: 0; color: var(--muted); }
+  footer { color: var(--muted); font-size: 13px; }
+  .jump { display: flex; flex-wrap: wrap; gap: 10px; }
+  .jump a {
+    color: var(--lace); text-decoration: none; font-size: 14px;
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px;
+  }
+  .jump a:hover, .jump a:focus-visible { border-color: var(--butter); color: var(--butter); }
+  .badge {
+    display: inline-block; vertical-align: middle; margin-inline-start: 8px;
+    background: var(--butter); color: var(--ground);
+    font-family: var(--body); font-size: 12px; font-weight: 600;
+    border-radius: 999px; padding: 0 9px; line-height: 20px;
+  }
+  .group { display: grid; gap: 20px; }
+  .group h2, .samples h2 { margin: 0; }
+  html { scroll-behavior: smooth; }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">sahra.studio · إعلانات فيديو UGC بالذكاء الاصطناعي</div>
+    <h1>عارضة تلبس <em>فستان عميلكم نفسه</em>، وتتكلم خليجي</h1>
+    <p class="lede">إعلانات من 6 إلى 15 ثانية جاهزة لتيك توك وسناب وريلز. بدون تصوير وبدون عارضة، والفستان يظهر كما هو في صور العميل: نفس الدانتيل والقصّة واللون.</p>
+  </header>
+
+  <section class="grid2" id="agencies" aria-label="للوكالات وفرق التسويق">
+    <div>
+      <h2>للوكالات وفرق التسويق</h2>
+      <p class="lede">إذا تديرون إعلانات لمتاجر أزياء، نشتغل معكم كفريق إنتاج من خلفكم.</p>
+    </div>
+    <ul>
+      <li><span class="dot"></span><span><b>باسمكم بالكامل</b><span class="sub">بدون شعارنا، وما نتواصل مع عملائكم أبداً</span></span></li>
+      <li><span class="dot"></span><span><b>عارضة ثابتة لكل متجر</b><span class="sub">تصير «وجه البراند» في كل إعلاناته</span></span></li>
+      <li><span class="dot"></span><span><b>كرييتف جديد كل أسبوع</b><span class="sub">بدون تصوير ولا شحن قطع ولا حجز موديل</span></span></li>
+      <li><span class="dot"></span><span><b>معاينة على منتج عميلكم</b><span class="sub">خلال 24 ساعة، تعرضونها عليه قبل أي التزام</span></span></li>
+    </ul>
+  </section>
+
+  <nav class="jump" aria-label="أقسام الصفحة">
+    <a href="#new">أحدث الأعمال</a>
+    <a href="#dresses">إعلانات الفساتين</a>
+    <a href="#store-samples">عينات المتاجر</a>
+  </nav>
+
+  <section class="group" id="new" aria-label="أحدث الأعمال">
+    <h2>أحدث الأعمال</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="ad-ruffle" src="ad-ruffle.mp4" poster="ad-ruffle.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الكشكشة بالترتر <span class="badge">جديد</span></span>
+          <span class="line">بالروب وفي يدها الفستان على الشماعة، وبعدها تطلع لابسته وتبان الكشكشة من الوسط لتحت.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-plum" src="ad-plum.mp4" poster="ad-plum.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان البلوم بالتطريز والذيل الطويل <span class="badge">جديد</span></span>
+          <span class="line">على رصيف بحري تمشي للكاميرا، وتلف ويبان الظهر والذيل، ثم: <q>يا بنات شوفوا هالفستان</q> و<q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-pearl" src="ad-pearl.mp4" poster="ad-pearl.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الأكمام الطايرة بالتطريز <span class="badge">جديد</span></span>
+          <span class="line">تمشي وتلف وتطير الأكمام، ويبان التطريز من قدام ومن ورا، ثم: <q>اطلبيه الحين!</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-green" src="ad-green.mp4" poster="ad-green.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الخرز المتدرّج <span class="badge">جديد</span></span>
+          <span class="line">رقصة كاملة على أغنية ترند، والخرز باين من الصدر لحد الذيل.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-maternity" src="ad-maternity.mp4" poster="ad-maternity.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان للحوامل بكيب الحلقات اللامعة <span class="badge">جديد</span></span>
+          <span class="line">في ممر الفندق تلف ويبان الظهر وحركة الكيب، ثم: <q>عندك زواج قريب؟</q> و<q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-sequin" src="ad-sequin.mp4" poster="ad-sequin.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الترتر البني بإبزيم ذهبي <span class="badge">جديد</span></span>
+          <span class="line">في جناح فندق تمشي وتلف، ويبان الترتر من الياقة إلى الحافة ومن الظهر.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-red" src="ad-red.mp4" poster="ad-red.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان الورد ثلاثي الأبعاد بالشراشيب <span class="badge">جديد</span></span>
+          <span class="line">وقفة ولفة وبصّة من فوق الكتف، وتبان الورود والخرز والرباط من ورا.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="samples" id="dresses" aria-label="إعلانات الفساتين">
+    <h2>إعلانات الفساتين</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="ad-reem" src="ad-reem.mp4" poster="ad-reem.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">وش ألبس لزواج أختي؟</span>
+          <span class="line">على رصيف القناة تمشي للكاميرا، وتلف ويطير الشال، ثم: <q>الطلب واتساب، والرابط في البايو</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-lavender" src="ad-lavender.mp4" poster="ad-lavender.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">عندك زواج قريب وتبين شي مختلف؟</span>
+          <span class="line">في ممر الفندق تورّي التفاصيل من قدام ومن ورا، ثم: <q>تخيلي تدخلين الزواج فيه، كل العيون عليك</q></span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-transition" src="ad-transition.mp4" poster="ad-transition.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">قبل وبعد</span>
+          <span class="line"><q>الزواج الليلة وما عندي شي ألبسه!</q> ثم الفستان يغطي الكاميرا، وترجع لابسته.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="ad-wedding" src="ad-wedding.mp4" poster="ad-wedding.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">عندك زواج قريب؟</span>
+          <span class="line">تلف ويبان الظهر والرباط، ثم تمشي للكاميرا: <q>اطلبيه الحين</q></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="samples" id="store-samples" aria-label="عينات سويناها لمتاجر فساتين">
+    <h2>عينات سويناها لمتاجر فساتين</h2>
+    <div class="reel">
+      <figure>
+        <div class="frame">
+          <video id="sample-hulm" src="sample-hulm.mp4" poster="sample-hulm.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">فستان «حلم»</span>
+          <span class="line">6 ثواني من صور المتجر: <q>لموسم الأعراس</q> ولفة كاملة.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame">
+          <video id="sample-qamar" src="sample-qamar.mp4" poster="sample-qamar.jpg" controls playsinline preload="metadata"></video>
+        </div>
+        <figcaption>
+          <span class="tag">الفستان الوردي بخيوط الكريستال</span>
+          <span class="line">6 ثواني من صور المتجر: لفة كاملة، ويبان الخرز والظهر.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div>
+      <h2>وش في كل إعلان</h2>
+      <ul>
+        <li><span class="dot"></span><span><b>بداية تشد في أول ثانيتين</b><span class="sub">جملة بصوت خليجي طبيعي، أو قبل وبعد</span></span></li>
+        <li><span class="dot"></span><span><b>فستانك نفسه، مو فستان يشبهه</b><span class="sub">من صورك الأمامية والخلفية</span></span></li>
+        <li><span class="dot"></span><span><b>عارضة ثابتة بنفس الوجه</b><span class="sub">في كل إعلاناتكم، وستايلها على ذوق المحل</span></span></li>
+        <li><span class="dot"></span><span><b>1080×1920 عمودي</b><span class="sub">جاهز للإعلانات المدفوعة، مع كتابة عربية ودعوة للطلب</span></span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>كيف نشتغل</h2>
+      <ol>
+        <li><span><b>ترسلون صورة أمامية وخلفية للفستان</b><span class="sub">من الموقع أو من جوالكم</span></span></li>
+        <li><span><b>معاينة خلال 24 ساعة</b><span class="sub">عليها علامة مائية، تشوفون النتيجة على منتجكم قبل الدفع</span></span></li>
+        <li><span><b>إذا عجبتكم، تدفعون وتوصلكم النسخة النظيفة</b><span class="sub">مع تعديل مجاني على الكتابة أو الصوت</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="offer">
+    <strong>شوفوا النتيجة على منتج عميلكم قبل الدفع</strong>
+    <p>أرسلوا صورة أمامية وخلفية لأي قطعة عند عميلكم في نفس المحادثة، وتوصلكم المعاينة خلال 24 ساعة.</p>
+  </section>
+
+  <footer>الإعلانات مصنوعة بالذكاء الاصطناعي. العارضة شخصية خيالية، والمنتج من صور المتجر.</footer>
+</div>
+</body>
+</html>
